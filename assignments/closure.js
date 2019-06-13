@@ -1,6 +1,16 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+const multiply = function() {
+  let multiply = 3;
+  return function (){
+    multiply = multiply*5;
+    return multiply;
+  }
+};
 
+const newmultiply = multiply ();
+console.log(newmultiply());
+console.log(newmultiply());
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
